@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 20200104072713) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.text     "comment",    limit: 65535
+    t.integer  "topic_id"
+    t.integer  "user_id"
   end
 
   create_table "favorites", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
